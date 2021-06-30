@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  font-family: sans-serif;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.sub-container {
+  max-width: 500px;
+  width: 100%;
+  height: 400px;
+  margin: 350px auto 0;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 0 40px rgb(195, 195, 197);
+}
+
+.sub-container .banner-img {
+  width: 220px;
+  height: 100%;
+}
+
+.sub-container .banner-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.sub-container .login-form {
+  width: 280px;
+  height: 100%;
+  text-align: center;
+  padding: 40px 35px 0;
+  position: relative;
+}
+span {
+  text-transform: capitalize;
+  font-size: 55px;
+}
+.sub-container .login-form .title {
+  color: #2836b9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.login-form .input {
+  margin: 5px 0 15px;
+  width: 100%;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.login-form .forgot a {
+  color: #0b0e06;
+  font-size: 13px;
+  position: relative;
+  margin-left: 130px;
+}
+
+.btnl {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #4430b6;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.wrapper {
+  text-align: center;
+  color: rgb(163, 160, 160);
+}
+.wrapper > h3::before,
+.wrapper > h3::after {
+  background: #d5d4da;
+  content: "";
+  display: block;
+  height: 1.5px;
+  position: absolute;
+  top: 73%;
+  -webkit-transform: translateY(-70%);
+  transform: translateY(-70%);
+  width: 95px;
+}
+.wrapper > .h3::before {
+  left: 20px;
+}
+.wrapper > h3::after {
+  right: 20px;
+}
+.fb {
+  background-color: #3b5998;
+  color: white;
+  width: 230px;
+  margin: 20px;
+  padding: 2px;
+}
+.google {
+  background-color: #dd4b39;
+  color: white;
+  width: 230px;
+  margin: 20px;
+  padding: 2px;
+}
+.fa-google-plus-g {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .sub-container {
+    max-width: 800px;
+    height: 500px;
+    margin-top: 50px;
+  }
+  .sub-container .banner-img {
+    width: 100%;
+    height: 490px;
+  }
+  .sub-container .login-form {
+    width: 100%;
+    padding: 20px 15px 0;
+  }
+  .sub-container .login-form .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .login-form .input {
+    margin: 20px;
+    width: 90%;
+    border: 2px solid black;
+  }
+
+  .login-form .forgot {
+    margin-bottom: 35px;
+  }
+  .login-form .forgot a {
+    color: #0b0e06;
+    font-size: 13px;
+    position: relative;
+    margin-left: 158px;
+  }
+  span {
+    text-transform: capitalize;
+    font-size: 35px;
+  }
+  .btnl {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100px;
+    margin-left: 45px;
+  }
+  .wrapper > h3::before,
+  .wrapper > h3::after {
+    background: #d5d4da;
+    content: "";
+    display: block;
+    height: 1.5px;
+    position: absolute;
+    top: 72%;
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
+    width: 155px;
+  }
+  .wrapper > .h3::before {
+    left: 20px;
+  }
+  .wrapper > h3::after {
+    right: 20px;
+  }
+  .fb {
+    background-color: #3b5998;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    padding: 2px;
+  }
+  .google {
+    background-color: #dd4b39;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    padding: 2px;
+  }
+  .fa-facebook-f {
+    margin-top: 9px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .sub-container {
+    flex-direction: column;
+    max-width: 400px;
+    height: auto;
+    margin-top: 50px;
+  }
+  .sub-container .banner-img {
+    width: 100%;
+    height: 220px;
+  }
+  .sub-container .login-form {
+    width: 100%;
+    padding: 20px 15px 0;
+  }
+  .sub-container .login-form .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .login-form .input {
+    margin: 20px;
+    width: 90%;
+    border: 2px solid black;
+  }
+
+  .login-form .forgot {
+    margin-bottom: 15px;
+  }
+  .login-form .forgot a {
+    color: #0b0e06;
+    font-size: 13px;
+    position: relative;
+    margin-left: 88px;
+  }
+  span {
+    text-transform: capitalize;
+    font-size: 35px;
+  }
+
+  .btnl {
+    padding: 7px;
+    width: 25%;
+    margin-left: 30px;
+  }
+  .wrapper > h3::before,
+  .wrapper > h3::after {
+    background: #d5d4da;
+    content: "";
+    display: block;
+    height: 1.5px;
+    position: absolute;
+    top: 80%;
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
+    width: 95px;
+  }
+  .wrapper > .h3::before {
+    left: 20px;
+  }
+  .wrapper > h3::after {
+    right: 20px;
+  }
+  .fb {
+    background-color: #3b5998;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    padding: 2px;
+  }
+  .google {
+    background-color: #dd4b39;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    padding: 2px;
+  }
+  .fa-facebook-f {
+    margin-top: 9px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .sub-container {
+    flex-direction: column;
+    max-width: 400px;
+    height: auto;
+    margin-top: 50px;
+  }
+  .sub-container .banner-img {
+    width: 100%;
+    height: 220px;
+  }
+  .sub-container .login-form {
+    width: 100%;
+    padding: 20px 15px 0;
+  }
+  .sub-container .login-form .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .login-form .input {
+    margin: 20px;
+    width: 90%;
+    border: 2px solid black;
+  }
+
+  .login-form .forgot {
+    margin-bottom: 35px;
+  }
+  .login-form .forgot a {
+    color: #0b0e06;
+    font-size: 13px;
+    position: relative;
+    margin-left: 33%;
+  }
+
+  .btnl {
+    padding: 7px;
+    width: 35%;
+    margin-left: 30px;
+  }
+  .wrapper > h3::before,
+  .wrapper > h3::after {
+    background: #d5d4da;
+    content: "";
+    display: block;
+    height: 1.5px;
+    position: absolute;
+    top: 80%;
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
+    width: 75px;
+  }
+  .wrapper > .h3::before {
+    left: 20px;
+  }
+  .wrapper > h3::after {
+    right: 20px;
+  }
+  .fb {
+    background-color: #3b5998;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    padding: 2px;
+  }
+  .google {
+    background-color: #dd4b39;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    padding: 2px;
+  }
+  .fa-google-plus-g {
+    margin-bottom: 10px;
+  }
+  .fa-facebook-f {
+    margin-bottom: 14px;
+  }
+}
